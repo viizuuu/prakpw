@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Praktikum - ToDo, Kalkulator & Validasi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List Sederhana</h1>
+    <div class="todo-section">
+      <input type="text" id="todoInput" placeholder="Tambahkan item baru">
+      <button onclick="addTodo()">Tambah Item</button>
+      <ul id="todoList"></ul>
+    </div>
+
+    <h1>Kalkulator Tambahan</h1>
+    <div class="calculator-section">
+      <input type="number" id="num1" placeholder="Angka pertama">
+      <input type="number" id="num2" placeholder="Angka kedua">
+      <div class="calc-buttons">
+        <button onclick="calculate('power')">Pangkat</button>
+        <button onclick="calculate('sqrt')">Akar Kuadrat</button>
+        <button onclick="calculate('mod')">Modulus</button>
+      </div>
+      <p>Hasil: <span id="calcResult"></span></p>
+    </div>
+
+    <h1>Form Validasi Input</h1>
+    <div class="form-section">
+      <input type="text" id="name" placeholder="Nama (min 4 karakter)">
+      <input type="email" id="email" placeholder="Email yang valid">
+      <input type="password" id="password" placeholder="Password minimal 8 karakter">
+      <button onclick="validateForm()">Validasi</button>
+      <p id="formMessage"></p>
+    </div>
+  </div>
+
+  <script src="prak1.js"></script>
+</body>
+</html>
