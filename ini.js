@@ -17,7 +17,7 @@ function addTodo() {
       };
   
       const deleteButton = document.createElement('button');
-      deleteButton.textContent = 'Hapus';
+      deleteButton.textContent = '-';
       deleteButton.onclick = () => {
         li.remove();
         saveTodos();
